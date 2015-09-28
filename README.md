@@ -1,6 +1,8 @@
 # Mouse_Capture
 c++ mouse capturing library
-This library is intended to capure the raw image of the mouse current displayed.
+
+This library is intended to capure the raw image of the mouse currently displayed.
+See the Test project for a simple demo
 
 	auto mouse = SL::Mouse_Capture::GetMouse();
 	std::cout << "mouse left coord : " << mouse.get_MouseInfo().left << std::endl;
