@@ -88,8 +88,10 @@ SL::Mouse_Capture::Mouse SL::Mouse_Capture::GetMouse()
 
 	Mouse_Info m;
 	m.Hidden = cursorInfo.flags & CURSOR_SHOWING;
-	m.x = cursorInfo.ptScreenPos.x - ii.xHotspot;
-	m.y = cursorInfo.ptScreenPos.y - ii.yHotspot;
+	m.left = cursorInfo.ptScreenPos.x - ii.xHotspot;
+	m.top = cursorInfo.ptScreenPos.y - ii.yHotspot;
+	m.height = height;
+	m.width = width;
 	return Mouse(m, retdata);
 }
 
